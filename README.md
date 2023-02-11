@@ -1,16 +1,12 @@
 # todo_app
+A flutter app from youtube Flutter Training
+from Ibrahim Ahmad
 
-A new Flutter project.
+ Video 2 
+- [https://youtube.com/watch?v=M_bo-de0MxY&si=EnSIkaIECMiOmarE]
 
 ## Getting Started
 
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
