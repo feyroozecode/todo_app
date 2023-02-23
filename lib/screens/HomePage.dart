@@ -15,31 +15,44 @@ class _HomePageState extends State<HomePage> {
 
   List<Todo> todosList = [];
 
+  TextEditingController titleController = TextEditingController();
+  TextEditingController contentController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
-     todosList.add(Todo(created, created,
+     todosList.add(
+      Todo(
+        created, 
+        created,
+       
         id: 0,
         title: "Deployer la version IOS",
-        content: "Deployer la version IOS de l'app  revolution  "));
+        content: "Deployer la version IOS de l'app  revolution  ", 
+        category:  'cat2', 
+      )
+    );
 
     return Scaffold(
       appBar: AppBar(title: const Text("Todo App")),
       body: SizedBox(
        child: ListView(
         children: todosList.map((item) => 
-        ListTile(
-          leading: CircleAvatar(
-            child: Text(item.id.toString())
-          ),
-          title: Text(item.title),
-          subtitle: Text(item.content)
-        )).toList()
+          ListTile(
+            leading: CircleAvatar(
+              child: Text(item.id.toString())
+            ),
+            title: Text(item.title),
+            subtitle: Text(item.content)
+          )).toList()
        )
       ),
       floatingActionButton:
-          FloatingActionButton(onPressed: () {
-            
-          }, child: const Icon(Icons.add)),
+          FloatingActionButton(
+            onPressed: () {
+           
+          }, 
+          child: const Icon(Icons.add)),
+      
     );
   }
 }
